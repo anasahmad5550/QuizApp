@@ -94,7 +94,7 @@ public class Questions extends AppCompatActivity
                 }
                 else {
                     wrong++;
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Wrong and correct is "+answers[flag], Toast.LENGTH_SHORT).show();
                 }
 
                 flag++;

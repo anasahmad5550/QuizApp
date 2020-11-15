@@ -63,17 +63,17 @@ tools:context=".Questions">
 
 </RadioGroup>
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Next Question"
-    android:id="@+id/button3"
-    android:layout_marginTop="27dp"
-    android:layout_below="@+id/answersgrp"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:background="#FF5722"
-    android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answersgrp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="27dp"
+        android:background="#13C61A"
+        android:text="Next Question"
+        android:textColor="#ffffff" />
 
 <Button
     android:layout_width="match_parent"

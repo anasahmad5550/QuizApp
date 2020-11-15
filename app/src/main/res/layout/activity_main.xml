@@ -10,46 +10,45 @@
     >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/quizapp"
-        android:layout_marginTop="48dp"
-        android:textSize="60dp"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/editName"
+        android:layout_width="256dp"
+        android:layout_height="163dp"
         android:layout_alignStart="@+id/editName"
-        android:textColor="#F44336" />
+        android:layout_alignLeft="@+id/editName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-39dp"
+        android:layout_marginLeft="-39dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/quizapp"
+        android:textColor="#265328"
+        android:textSize="40dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="243dp"
-        android:layout_height="88dp"
+        android:layout_width="186dp"
+        android:layout_height="65dp"
 
 
         android:layout_below="@+id/editName"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="108dp"
         android:layout_marginTop="94dp"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="129dp"
-        android:background="#FF5722"
+        android:layout_marginEnd="101dp"
+        android:background="#13C61A"
         android:text="Start"
         android:textColor="#ffffff"
         android:textSize="30dp" />
 
     <EditText
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
         android:ems="10"
-        android:id="@+id/editName"
-        android:textColor="#df040b"
         android:hint="Enter your name"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:inputType="textPersonName"
+        android:textColor="#13C61A" />
 
 
 </RelativeLayout>

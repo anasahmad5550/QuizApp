@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Answer extends AppCompatActivity {
-    TextView tv, tv2, tv3;
+    TextView score;
     Button btnRestart;
 
     @Override
@@ -17,23 +17,18 @@ public class Answer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        tv = (TextView)findViewById(R.id.tvres);
-        tv2 = (TextView)findViewById(R.id.tvres2);
-        tv3 = (TextView)findViewById(R.id.tvres3);
+
+        score = (TextView)findViewById(R.id.score);
         btnRestart = (Button) findViewById(R.id.btnRestart);
 
-        StringBuffer sb = new StringBuffer();
-        sb.append("Correct answers: " + Questions.correct + "\n");
-        StringBuffer sb2 = new StringBuffer();
-        sb2.append("Wrong Answers: " + Questions.wrong + "\n");
-        StringBuffer sb3 = new StringBuffer();
-        sb3.append("Final Score: " + Questions.correct + "\n");
-        tv.setText(sb);
-        tv2.setText(sb2);
-        tv3.setText(sb3);
+
+        StringBuffer stringbuff = new StringBuffer();
+        stringbuff.append("Your Score is : " + Questions.correct + "/10");
+
+        score.setText(stringbuff);
 
         Questions.correct=0;
-        Questions.wrong=0;
+
 
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
